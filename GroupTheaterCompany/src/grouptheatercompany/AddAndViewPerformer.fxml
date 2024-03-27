@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="700.0" style="-fx-background-color: #16aefb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.AddAndViewPerformerController">
+   <children>
+      <Button layoutX="24.0" layoutY="139.0" mnemonicParsing="false" onAction="#ViewAllPerformorInTableButtonOnClick" prefHeight="42.0" prefWidth="262.0" text="View Performer" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="210.0" prefHeight="330.0" prefWidth="635.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="177.0" text="Name" />
+          <TableColumn fx:id="ptypeColumn" prefWidth="106.0" text="Performer Type" />
+            <TableColumn fx:id="genderColumn" prefWidth="130.0" text="Gender" />
+            <TableColumn fx:id="dobColumn" prefWidth="98.0" text="BirthDay" />
+            <TableColumn fx:id="nidColumn" prefWidth="122.0" text="NID" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="42.0" prefWidth="75.0" text="Back" />
+      <Button layoutX="26.0" layoutY="559.0" mnemonicParsing="false" text="Delete Performer" />
+   </children>
+</AnchorPane>

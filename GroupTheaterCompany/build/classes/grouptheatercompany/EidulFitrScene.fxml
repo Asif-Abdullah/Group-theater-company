@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="651.0" style="-fx-background-color: #16aefb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.EidulFitrSceneController">
+   <children>
+      <Label layoutX="49.0" layoutY="72.0" text="Employee Name:" />
+      <Label layoutX="49.0" layoutY="103.0" text="Employee Id:" />
+      <Label layoutX="49.0" layoutY="139.0" text="Depertment :" />
+      <Label layoutX="49.0" layoutY="174.0" text="Employee designation:" />
+      <Label layoutX="49.0" layoutY="205.0" text="PayAble Bonus" />
+      <TextField fx:id="EmployeeNameTextField" layoutX="199.0" layoutY="68.0" />
+      <TextField fx:id="EmployeeIDTextField" layoutX="199.0" layoutY="108.0" />
+      <TextField fx:id="PayableBonusTextField" layoutX="199.0" layoutY="210.0" />
+      <ComboBox fx:id="DeptComboBox" layoutX="199.0" layoutY="144.0" prefWidth="150.0" />
+      <ComboBox fx:id="DesigComboBox" layoutX="199.0" layoutY="179.0" prefWidth="150.0" />
+      <Button layoutX="42.0" layoutY="305.0" mnemonicParsing="false" onAction="#addBonusButtonOnClick" text="Add Employee For Bonus" />
+      <Button layoutX="375.0" layoutY="305.0" mnemonicParsing="false" onAction="#PreviewAndSendBonusButtonOnClick" text="Preview And Send to All Employee Bonus" />
+      <Button layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#BackButtonOnClick" prefHeight="32.0" prefWidth="60.0" text="Back" />
+      <TableView fx:id="TableView" layoutX="17.0" layoutY="339.0" prefHeight="200.0" prefWidth="616.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="172.0" text="Name" />
+          <TableColumn fx:id="EmployIdColumn" prefWidth="108.0" text="Employee Id" />
+            <TableColumn fx:id="DeeptColumn" prefWidth="97.0" text="Depertment" />
+            <TableColumn fx:id="DesigColumn" prefWidth="125.0" text="Designation" />
+            <TableColumn fx:id="BonusColumn" prefWidth="113.0" text="Bonus Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

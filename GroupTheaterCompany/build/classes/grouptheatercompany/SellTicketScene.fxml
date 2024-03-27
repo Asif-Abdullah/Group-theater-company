@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.SellTicketSceneController">
+   <children>
+      <Button fx:id="HomeButton" layoutX="522.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#HomeButton" text="Home" textFill="#3486a1" />
+      <Label alignment="CENTER" layoutX="51.0" layoutY="47.0" prefHeight="18.0" prefWidth="182.0" text="Shows Name" textFill="#12511a">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="155.0" text="Tickets" textFill="#156b23">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="51.0" layoutY="171.0" prefHeight="18.0" prefWidth="182.0" text="Shows Date" textFill="#12511a">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ShowsNameComboBox" layoutX="67.0" layoutY="74.0" prefWidth="150.0" />
+      <DatePicker fx:id="ShowsDatePicker" layoutX="53.0" layoutY="200.0" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="289.0" prefHeight="18.0" prefWidth="182.0" text="Ticket Price" textFill="#12511a">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PriceTextField" layoutX="67.0" layoutY="324.0" />
+      <ComboBox fx:id="TicketComboBox" layoutX="358.0" layoutY="187.0" prefWidth="150.0" />
+      <Button fx:id="submitButton" alignment="CENTER" layoutX="342.0" layoutY="237.0" mnemonicParsing="false" onMouseClicked="#submitButton" prefHeight="30.0" prefWidth="182.0" style="-fx-background-color: #19507e;" text="Submit" textFill="#faf7f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

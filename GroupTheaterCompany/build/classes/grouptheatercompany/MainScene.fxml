@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="682.0" style="-fx-background-color: #afffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.MainSceneController">
+   <children>
+      <Text layoutX="171.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Group Theater Company " wrappingWidth="340.91796875">
+         <font>
+            <Font name="Javanese Text" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="76.0" layoutY="219.0" mnemonicParsing="false" onAction="#AccountsOfficerButtonOnClick" prefHeight="41.0" prefWidth="184.0" style="-fx-background-color: #00FFFF;" text="Accounts Officer">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="76.0" layoutY="285.0" mnemonicParsing="false" onAction="#ProducerButtonOnClick" prefHeight="41.0" prefWidth="184.0" style="-fx-background-color: #00FFFF;" text="Producer">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="436.0" layoutY="208.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="176.0" style="-fx-background-color: #00FFFF;" text="Event Coordinator" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="436.0" layoutY="285.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="176.0" style="-fx-background-color: #00FFFF;" text="Viewer" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="436.0" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#DirectorButtonOnclick" prefHeight="41.0" prefWidth="176.0" style="-fx-background-color: #00FFFF;" text="Director">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="436.0" layoutY="436.0" mnemonicParsing="false" onMouseClicked="#ProductionManagerButtonOnClick" prefHeight="41.0" prefWidth="176.0" style="-fx-background-color: #00FFFF;" text="Production Manager">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="79.0" layoutY="363.0" mnemonicParsing="false" onAction="#TicketButton" prefHeight="41.0" prefWidth="184.0" style="-fx-background-color: #00FFFF;" text="Tickets Salesperson">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="85.0" layoutY="436.0" mnemonicParsing="false" onAction="#PerformerButton" prefHeight="41.0" prefWidth="184.0" style="-fx-background-color: #00FFFF;" text="Performer">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

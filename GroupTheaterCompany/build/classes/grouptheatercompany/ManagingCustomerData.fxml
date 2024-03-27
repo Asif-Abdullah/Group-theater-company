@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.ManagingCustomerDataController">
+   <children>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="77.0" prefHeight="18.0" prefWidth="135.0" text="Customer Name  :" textFill="#228453">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerNameTxtFld" layoutX="199.0" layoutY="73.0" />
+      <TextField fx:id="contactTxtFld" layoutX="199.0" layoutY="111.0" />
+      <Label alignment="CENTER" layoutX="46.0" layoutY="115.0" prefHeight="18.0" prefWidth="135.0" text="Customer Contact  :" textFill="#228453">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="63.0" layoutY="30.0" prefHeight="18.0" prefWidth="286.0" text="Customer Details" textFill="#228453">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" alignment="CENTER" layoutX="145.0" layoutY="233.0" mnemonicParsing="false" onMouseClicked="#AddButton" prefHeight="18.0" prefWidth="72.0" style="-fx-background-color: #19507e;" text="Add" textFill="#faf7f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewButton" alignment="CENTER" layoutX="299.0" layoutY="233.0" mnemonicParsing="false" onMouseClicked="#ViewButton" prefHeight="18.0" prefWidth="72.0" style="-fx-background-color: #19507e;" text="View" textFill="#faf7f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="detailTable" layoutX="55.0" layoutY="294.0" prefHeight="139.0" prefWidth="417.0">
+        <columns>
+          <TableColumn fx:id="nameColum" prefWidth="116.0000057220459" text="Name" />
+          <TableColumn fx:id="contactColum" prefWidth="120.0" text="Contact" />
+            <TableColumn fx:id="feedBackColum" prefWidth="178.4000244140625" text="Feedback" />
+        </columns>
+      </TableView>
+      <Button fx:id="homeButton" layoutX="494.0" layoutY="17.0" mnemonicParsing="false" onMouseClicked="#HomeButton" text="Home" textFill="#2374a6" />
+      <Label alignment="CENTER" layoutX="46.0" layoutY="162.0" prefHeight="18.0" prefWidth="135.0" text="Customer Feedback  :" textFill="#228453">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="feedBackTextField" layoutX="199.0" layoutY="158.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="598.0" style="-fx-background-color: #16aefb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.IncomeStatementAndBaleaneSceneController">
+   <children>
+      <TextField fx:id="FileTextField" layoutX="187.0" layoutY="182.0" prefHeight="25.0" prefWidth="386.0" />
+      <Label layoutX="48.0" layoutY="186.0" text="Income Statement" />
+      <Button layoutX="24.0" layoutY="16.0" mnemonicParsing="false" onAction="#BackButtonOnClick" prefHeight="32.0" prefWidth="64.0" text="Back" />
+      <Button layoutX="245.0" layoutY="270.0" mnemonicParsing="false" onAction="#UploadButtonOnCliCk" prefHeight="32.0" prefWidth="94.0" text="Upload" />
+   </children>
+</AnchorPane>

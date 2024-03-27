@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="714.0" style="-fx-background-color: #16aefb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.MonthlyReportSceneController">
+   <children>
+      <Label layoutX="48.0" layoutY="79.0" text="Total employee Salary:" />
+      <Label layoutX="47.0" layoutY="125.0" text="Transport cost " />
+      <Label layoutX="382.0" layoutY="70.0" text="Total ticket sales amount" />
+      <Label layoutX="48.0" layoutY="168.0" text="Auditorium rent cost" />
+      <Label layoutX="47.0" layoutY="203.0" text="Electricity bill" />
+      <Label layoutX="48.0" layoutY="238.0" text="Name of months" />
+      <ComboBox fx:id="monthComboBox" layoutX="196.0" layoutY="234.0" prefWidth="150.0" />
+      <TextField fx:id="totalSalaryTextField" layoutX="196.0" layoutY="75.0" />
+      <TextField fx:id="TransCostTextField" layoutX="196.0" layoutY="121.0" />
+      <TextField fx:id="auditoriumCostTextField" layoutX="196.0" layoutY="164.0" />
+      <TextField fx:id="elecBillTextField" layoutX="196.0" layoutY="199.0" />
+      <TextField fx:id="totalSalesAmountTextField" layoutX="525.0" layoutY="66.0" />
+      <Button layoutX="25.0" layoutY="22.0" mnemonicParsing="false" onAction="#BackButtonOnClick" prefHeight="25.0" prefWidth="80.0" text="Back" />
+      <Button layoutX="87.0" layoutY="280.0" mnemonicParsing="false" onAction="#SendButtonOnclick" prefHeight="37.0" prefWidth="190.0" text="Send Reports to Producer" />
+      <TableView fx:id="tableView" layoutX="33.0" layoutY="324.0" prefHeight="176.0" prefWidth="661.0">
+        <columns>
+          <TableColumn fx:id="monthsColumn" prefWidth="95.0" text="Months" />
+          <TableColumn fx:id="ticketSalesColumn" prefWidth="111.0" text="Total ticket sales" />
+            <TableColumn fx:id="SalaryColumn" prefWidth="130.0" text="Employee Salary" />
+            <TableColumn fx:id="TransCostColumn" prefWidth="99.0" text="Transport Cost" />
+            <TableColumn fx:id="auditRentColumn" prefWidth="119.0" text="Auditorium rent" />
+            <TableColumn fx:id="ElecBillColumn" prefWidth="105.0" text="Elecricity bill" />
+        </columns>
+      </TableView>
+      <Button layoutX="586.0" layoutY="286.0" mnemonicParsing="false" onAction="#previewReportButtonOnClick" text="Preview Report" />
+      <Button layoutX="39.0" layoutY="517.0" mnemonicParsing="false" onAction="#DeleteButtonOnClick" text="Delete Report" />
+   </children>
+</AnchorPane>

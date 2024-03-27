@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.ShowTimeSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="41.0" layoutY="52.0" prefHeight="18.0" prefWidth="153.0" text="Show Time Schedule" textFill="#226937">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="HomeButton" layoutX="512.0" layoutY="27.0" mnemonicParsing="false" onMouseClicked="#HomeButton" text="Home" textFill="#1e87a4" />
+      <TableView fx:id="TimeTable" layoutX="55.0" layoutY="93.0" prefHeight="200.0" prefWidth="418.0">
+        <columns>
+          <TableColumn prefWidth="184.0" text="Shows" />
+          <TableColumn prefWidth="126.4000244140625" text="Time" />
+            <TableColumn prefWidth="108.0" text="Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

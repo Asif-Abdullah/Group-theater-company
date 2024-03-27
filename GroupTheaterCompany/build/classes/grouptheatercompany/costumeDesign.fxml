@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="587.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.CostumeDesignController">
+   <children>
+      <Button layoutX="584.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#homeSceneOnClicked" style="-fx-background-color: #3A72FB; -fx-border-color: #900C3F;" text="Home Scene" textFill="WHITE" />
+      <Label layoutX="55.0" layoutY="34.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Costume Requirement" textFill="#c70039" />
+      <Label layoutX="58.0" layoutY="88.0" text="Number of Costume Required" />
+      <Label layoutX="64.0" layoutY="237.0" text="Specific Requirement" />
+      <TextField fx:id="numberOfCostumeRequiredTextField" layoutX="232.0" layoutY="85.0" prefHeight="25.0" prefWidth="70.0" />
+      <TextField fx:id="designerNameTextField" layoutX="158.0" layoutY="200.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="58.0" layoutY="203.0" text="Designer Name" />
+      <TextField fx:id="specificRequirementTextField" layoutX="181.0" layoutY="233.0" prefHeight="25.0" prefWidth="149.0" />
+      <DatePicker fx:id="startDatePicker" layoutX="128.0" layoutY="125.0" />
+      <Button layoutX="112.0" layoutY="275.0" mnemonicParsing="false" onMouseClicked="#createButtonOnClick" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: #3A72FB;" text="Create" textFill="#f5f7fc" />
+      <Label layoutX="55.0" layoutY="318.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Distribute List" textFill="#ff5733" />
+      <Label layoutX="365.0" layoutY="38.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Costume Distribute" textFill="#c70039" />
+      <Label layoutX="372.0" layoutY="80.0" text="Event Name" />
+      <Label layoutX="61.0" layoutY="129.0" text="Start Date" />
+      <Label layoutX="372.0" layoutY="150.0" text="Performer Name" />
+      <Label layoutX="385.0" layoutY="267.0" text="Contract Number" />
+      <TextField fx:id="eventNameTextField" layoutX="455.0" layoutY="76.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="contractNumberTextField" layoutX="486.0" layoutY="263.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="costumeIdTextField" layoutX="458.0" layoutY="113.0" prefHeight="25.0" prefWidth="85.0" />
+      <Button layoutX="426.0" layoutY="306.0" mnemonicParsing="false" onMouseClicked="#addToDistributeListButtonOnClick" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #3A72FB;" text="Add to Distribute List" textFill="#f5f7fc" />
+      <TableView fx:id="tableView" editable="true" layoutX="22.0" layoutY="354.0" prefHeight="214.0" prefWidth="650.0">
+         <columns>
+            <TableColumn fx:id="eventNameColumn" prefWidth="113.0" text="EventName" />
+            <TableColumn fx:id="costumeIdColumn" prefWidth="73.0" text="CostumeID" />
+            <TableColumn fx:id="performerNameColumn" prefWidth="106.0" text="PerformerName" />
+            <TableColumn fx:id="startingDateColumn" minWidth="0.0" prefWidth="111.0" text="StartingDate" />
+            <TableColumn fx:id="endingDateColumn" prefWidth="88.0" text="EndingDate" />
+            <TableColumn fx:id="contractNumberColumn" prefWidth="156.0" text="ContractNumber" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="endDatePicker" layoutX="128.0" layoutY="166.0" />
+      <Label layoutX="61.0" layoutY="170.0" text="End Date" />
+      <Label layoutX="373.0" layoutY="117.0" text="Costume ID" />
+      <TextField fx:id="performerNameTextField" layoutX="478.0" layoutY="146.0" prefHeight="25.0" prefWidth="130.0" />
+      <DatePicker fx:id="startDatePicker2" layoutX="447.0" layoutY="180.0" />
+      <Label layoutX="380.0" layoutY="184.0" text="Start Date" />
+      <DatePicker fx:id="endDatePicker2" layoutX="447.0" layoutY="221.0" />
+      <Label layoutX="380.0" layoutY="225.0" text="End Date" />
+   </children>
+</AnchorPane>

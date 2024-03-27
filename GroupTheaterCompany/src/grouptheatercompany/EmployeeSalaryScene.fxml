@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="639.0" style="-fx-background-color: #16aefb;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.EmployeeSalarySceneController">
+   <children>
+      <Label layoutX="36.0" layoutY="67.0" text="Employee Name:" />
+      <Label layoutX="36.0" layoutY="112.0" text="Employee Id:" />
+      <Label layoutX="35.0" layoutY="161.0" text="Depertment :" />
+      <Label layoutX="28.0" layoutY="267.0" text="PayAble Salary :" />
+      <TextField fx:id="EmployeeNameTextField" layoutX="180.0" layoutY="63.0" />
+      <TextField fx:id="EmployeeIdTextField" layoutX="180.0" layoutY="108.0" />
+      <TextField fx:id="SalaryTextField" layoutX="181.0" layoutY="263.0" />
+      <ComboBox fx:id="DeptTextField" layoutX="180.0" layoutY="157.0" prefWidth="150.0" />
+      <Button layoutX="56.0" layoutY="322.0" mnemonicParsing="false" onAction="#AddEmployeeSalaryButtonOnClick" prefHeight="25.0" prefWidth="140.0" text="Add Employee Salary" />
+      <Button layoutX="449.0" layoutY="568.0" mnemonicParsing="false" onAction="#SendEmployeeSalaryButtonOnClick" prefHeight="25.0" prefWidth="176.0" text=" Send To Employee Salary" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButtonOnClick" prefHeight="33.0" prefWidth="112.0" text="Back" />
+      <Label layoutX="30.0" layoutY="218.0" text="Employee designation:" />
+      <ComboBox fx:id="DesigTextField" layoutX="180.0" layoutY="214.0" prefWidth="150.0" />
+      <Button layoutX="264.0" layoutY="322.0" mnemonicParsing="false" onAction="#PreviewButtonOnClick" text="PreView" />
+      <TableView fx:id="TableView" layoutX="20.0" layoutY="374.0" prefHeight="187.0" prefWidth="614.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="160.0" text="Name" />
+          <TableColumn fx:id="EmployIdColumn" prefWidth="105.0" text="Employee Id" />
+            <TableColumn fx:id="DeeptColumn" prefWidth="105.0" text="Depertment" />
+            <TableColumn fx:id="DesigColumn" prefWidth="140.0" text="Designation" />
+            <TableColumn fx:id="BonusColumn" prefWidth="101.0" text="Salary" />
+        </columns>
+      </TableView>
+      <Button layoutX="17.0" layoutY="568.0" mnemonicParsing="false" onAction="#DeleteButtonOnClick" text="Delete Employee" />
+      <Button layoutX="162.0" layoutY="568.0" mnemonicParsing="false" onAction="#EditButtonOnClick" prefHeight="25.0" prefWidth="84.0" text="Edit" />
+   </children>
+</AnchorPane>

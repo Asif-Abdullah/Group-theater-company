@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="497.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.AttendanceSceneController">
+   <children>
+      <Button fx:id="HomeButton" layoutX="475.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#HomeButton" text="Home" textFill="#287cdc" />
+      <Label alignment="CENTER" layoutX="46.0" layoutY="71.0" prefHeight="18.0" prefWidth="123.0" text="Performer Name" textFill="#2e7e45">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameTextField" layoutX="179.0" layoutY="68.0" />
+      <Label layoutX="55.0" layoutY="112.0" prefHeight="18.0" prefWidth="123.0" text="Performer ID" textFill="#2e7e45">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IDTextField" layoutX="179.0" layoutY="108.0" />
+      <Button fx:id="PresentButton" layoutX="108.0" layoutY="159.0" mnemonicParsing="false" onMouseClicked="#PresentButton" prefHeight="26.0" prefWidth="158.0" text="Present" textFill="#2650bc" />
+      <TextArea fx:id="PrfDtlTextArea" layoutX="42.0" layoutY="270.0" prefHeight="159.0" prefWidth="470.0" />
+      <Label layoutX="55.0" layoutY="286.0" />
+      <Label alignment="TOP_LEFT" layoutX="46.0" layoutY="239.0" prefHeight="18.0" prefWidth="354.0" text="Performer Attendance Details" textFill="#2e7e45">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

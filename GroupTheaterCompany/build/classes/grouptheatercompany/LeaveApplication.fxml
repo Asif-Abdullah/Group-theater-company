@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.LeaveApplicationController">
+   <children>
+      <Button fx:id="HomeButton" layoutX="508.0" layoutY="26.0" mnemonicParsing="false" onMouseClicked="#HomeButton" text="Home" textFill="#2374a6" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="68.0" prefHeight="18.0" prefWidth="94.0" text="Employee ID" textFill="#228453">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="41.0" layoutY="111.0" prefHeight="18.0" prefWidth="94.0" text="Department" textFill="#228453">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="48.0" layoutY="160.0" prefHeight="18.0" prefWidth="120.0" text="Start date of leave" textFill="#228453">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="48.0" layoutY="216.0" prefHeight="18.0" prefWidth="120.0" text="End date of leave" textFill="#228453">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EmpIdTxtField" layoutX="194.0" layoutY="64.0" />
+      <ComboBox fx:id="DptComboBox" layoutX="193.0" layoutY="107.0" prefWidth="150.0" />
+      <DatePicker fx:id="SrtLeaveDatePicker" layoutX="194.0" layoutY="156.0" />
+      <DatePicker fx:id="EndLeaveDatePicker" layoutX="194.0" layoutY="212.0" />
+      <Button fx:id="ApplyButton" alignment="CENTER" layoutX="168.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#ApplyButton" prefHeight="26.0" prefWidth="247.0" style="-fx-background-color: #19507e;" text="Apply" textFill="#faf7f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="leaveTextArea" layoutX="35.0" layoutY="336.0" prefHeight="200.0" prefWidth="570.0" />
+   </children>
+</AnchorPane>

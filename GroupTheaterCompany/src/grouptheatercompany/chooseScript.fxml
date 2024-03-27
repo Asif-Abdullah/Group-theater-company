@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="601.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.ChooseScriptController">
+   <children>
+      <Button layoutX="592.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#homeSceneOnClicked" style="-fx-background-color: #3A72FB; -fx-border-color: #900C3F;" text="Home Scene" textFill="WHITE" />
+      <Button layoutX="57.0" layoutY="114.0" mnemonicParsing="false" onMouseClicked="#addScriptButtonOnClick" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #3A72FB;" text="Add Script" textFill="#f5f7fc" />
+      <Button layoutX="57.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#selectScriptButtonOnClick" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #3A72FB;" text="Select Script" textFill="#f5f7fc" />
+      <Button layoutX="57.0" layoutY="170.0" mnemonicParsing="false" onMouseClicked="#viewScriptButtonOnClick" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #3A72FB;" text="View Script" textFill="#f5f7fc" />
+      <Button layoutX="57.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#finalScriptButtonOnClick" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #3A72FB;" text="Final Script" textFill="#f5f7fc" />
+      <Button layoutX="57.0" layoutY="276.0" mnemonicParsing="false" onMouseClicked="#shortListScriptButtonOnClick" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #3A72FB;" text="Short List Script" textFill="#f5f7fc" />
+      <Label layoutX="57.0" layoutY="62.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Script" textFill="#c70039" />
+      <BorderPane fx:id="borderPane" layoutX="186.0" layoutY="70.0" prefHeight="507.0" prefWidth="487.0" style="-fx-background-color: #DAF7A6;" />
+   </children>
+</AnchorPane>

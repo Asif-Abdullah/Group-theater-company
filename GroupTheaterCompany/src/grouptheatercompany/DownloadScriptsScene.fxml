@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.DownloadScriptsSceneController">
+   <children>
+      <Label alignment="CENTER" layoutX="59.0" layoutY="42.0" prefHeight="18.0" prefWidth="137.0" text="Performer Scripts" textFill="#3f8c26">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="HomeButton" layoutX="512.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#HomeButton" text="Home" textFill="#148ab1" />
+      <ComboBox fx:id="ScriptsComboBox" layoutX="59.0" layoutY="69.0" prefWidth="150.0" />
+      <Button fx:id="DownloadButton" layoutX="331.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#DownloadButton" prefHeight="26.0" prefWidth="138.0" text="Download" textFill="#0f13d9">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="ScriptsTextArea" layoutX="300.0" layoutY="198.0" prefHeight="164.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

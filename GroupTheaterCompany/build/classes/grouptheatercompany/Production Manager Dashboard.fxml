@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="598.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.ProductionManagerDashboardController">
+   <children>
+      <Button layoutX="607.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#logoutButtonOnClicked" style="-fx-background-color: #3A72FB; -fx-border-color: #900C3F;" text="Logout" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="66.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="The Group Theater Company" textFill="#c70039" />
+      <Label layoutX="309.0" layoutY="199.0" prefHeight="226.0" prefWidth="298.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Success and good fortune await us! We welcome you to the team!" textAlignment="CENTER" textFill="#ff5733" wrapText="true" />
+      <Button layoutX="63.0" layoutY="182.0" mnemonicParsing="false" onMouseClicked="#viewRehearsalTimeButtonOnClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3A72FB;" text="View Rehearsal Time" textFill="#f5f7fc" />
+      <Button layoutX="63.0" layoutY="238.0" mnemonicParsing="false" onMouseClicked="#projectBudgetButtonOnClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3A72FB;" text="Project Budget" textFill="#f5f7fc" />
+      <Button layoutX="63.0" layoutY="292.0" mnemonicParsing="false" onMouseClicked="#createCastActorListButtonOnClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3A72FB;" text="Create Cast Actor List" textFill="#f5f7fc" />
+      <Button layoutX="63.0" layoutY="346.0" mnemonicParsing="false" onMouseClicked="#venueButtonOnClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3A72FB;" text="Venue" textFill="#f5f7fc" />
+      <Button layoutX="63.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#eventCalenderButtonOnClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3A72FB;" text="Event Calender" textFill="#f5f7fc" />
+      <Button layoutX="63.0" layoutY="134.0" mnemonicParsing="false" onMouseClicked="#productionScheduleButtonOnClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3A72FB;" text="Production Schedule" textFill="#f5f7fc" />
+      <Button layoutX="63.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#crewListButtonOnClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3A72FB;" text="Crew List" textFill="#f5f7fc" />
+      <Button layoutX="63.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#costumeDesignButtonOnClick" prefHeight="25.0" prefWidth="162.0" style="-fx-background-color: #3A72FB;" text="Costume Design" textFill="#f5f7fc" />
+   </children>
+</AnchorPane>

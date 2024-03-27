@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="grouptheatercompany.ViewProductionScheduleRadioButtonController">
+   <children>
+      <Label layoutX="9.0" layoutY="14.0" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Production Schedule" textFill="#ff5733" />
+      <TableView fx:id="tableView" editable="true" layoutX="7.0" layoutY="60.0" prefHeight="204.0" prefWidth="598.0">
+         <columns>
+            <TableColumn fx:id="productNameColumn" prefWidth="113.0" text="Product Name" />
+            <TableColumn fx:id="quantityColumn" prefWidth="73.0" text="Quantity" />
+            <TableColumn fx:id="startDateColumn" prefWidth="96.0" text="Start Date" />
+            <TableColumn fx:id="endDateColumn" prefWidth="92.0" text="End Date" />
+            <TableColumn fx:id="supervisorNameColumn" prefWidth="118.0" text="Supervisor Name" />
+            <TableColumn fx:id="notesColumn" prefWidth="105.0" text="Notes" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
